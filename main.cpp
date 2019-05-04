@@ -24,7 +24,10 @@ public:
   void setNotification(string notification){this->notification = notification;}
   string getNotification(){return this->notification;}
 
-void displayDaysBeforeEvent(Datge *today){
+void displayDaysBeforeEvent(Date *today){
+
+  int days = (eventdate.getDay()-today->getDay());
+  cout << "days until event: " << days << endl;
 
 }
 
